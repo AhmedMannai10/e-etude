@@ -2,6 +2,7 @@ import 'package:go_router/go_router.dart';
 
 import '../features/auth/pages/login.dart';
 import '../features/auth/pages/register.dart';
+import '../features/course/pages/course_page.dart';
 import '../features/courses/pages/home_page.dart';
 
 final GoRouter router = GoRouter(
@@ -13,7 +14,10 @@ final GoRouter router = GoRouter(
       routes: <RouteBase>[
         GoRoute(
             path: 'register', builder: (context, state) => const Register()),
-        GoRoute(path: 'homepage', builder: (context, state) => const HomePage())
+        GoRoute(
+            path: 'homepage', builder: (context, state) => const HomePage()),
+        GoRoute(
+            path: 'coursepage', builder: (context, state) => const CoursePage())
       ],
     ),
   ],

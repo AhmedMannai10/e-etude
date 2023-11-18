@@ -30,7 +30,31 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(30),
                       bottomRight: Radius.circular(30))),
-              child: const Text(""),
+              child: Center(
+                child: Container(
+                  margin: EdgeInsets.only(top: 10.0),
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                        top: 12.0, left: 8.0, bottom: 8.0, right: 8.0),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Text(
+                              "Categories",
+                              style: TextStyle(color: Colors.white70),
+                            ),
+                            TextButton(
+                                onPressed: () => print("category ui"),
+                                child: Text("See All"))
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             ),
           ),
         ),
@@ -68,7 +92,7 @@ class _HomePageState extends State<HomePage> {
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.purple,
           onTap: _onItemTapped,
-          items: const <BottomNavigationBarItem>[
+          items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: 'Home',

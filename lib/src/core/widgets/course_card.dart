@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class CourseCard extends StatefulWidget {
   final String title;
@@ -56,7 +57,7 @@ class _CourseCardState extends State<CourseCard> {
                     Expanded(
                         flex: 1,
                         child: ElevatedButton(
-                            onPressed: () => {print("Watch Now")},
+                            onPressed: () => {context.go("/coursepage")},
                             child: const Text("Watch Now"))),
                   ],
                 ),
