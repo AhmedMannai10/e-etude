@@ -19,7 +19,7 @@ class MyCourses extends StatelessWidget {
               sliver: SliverList(
                 delegate: SliverChildListDelegate(
                   <Widget>[
-                    CourseCard(
+                    const CourseCard(
                         title: "watched Course",
                         description: "software engineering course"),
                   ],

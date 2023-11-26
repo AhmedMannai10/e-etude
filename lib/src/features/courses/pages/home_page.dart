@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/widgets/course_card.dart';
-import '../../users/user_profile.dart';
 import '../../courses/pages/my_courses.dart';
+import '../../users/pages/user_profile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -32,10 +32,8 @@ class _HomePageState extends State<HomePage> {
                       bottomRight: Radius.circular(30))),
               child: Center(
                 child: Container(
-                  margin: EdgeInsets.only(top: 10.0),
                   child: Padding(
-                    padding: const EdgeInsets.only(
-                        top: 12.0, left: 8.0, bottom: 8.0, right: 8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Column(
                       children: [
                         Row(

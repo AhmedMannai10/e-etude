@@ -57,7 +57,8 @@ class _CourseCardState extends State<CourseCard> {
                     Expanded(
                         flex: 1,
                         child: ElevatedButton(
-                            onPressed: () => {context.go("/coursepage")},
+                            onPressed: () =>
+                                {context.go("/homepage/coursepage")},
                             child: const Text("Watch Now"))),
                   ],
                 ),
